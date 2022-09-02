@@ -23,3 +23,8 @@ plot_data <- ggplot(data = data_var, aes(x = Concentração, y = Altura)) +
        y = "média das alturas relativas de avermectina",
        title = "Gráfico de dispersão") +
   theme_bw()
+
+## Fazendo a regressão linear
+reg_lin <- lm(data = data_var, Altura ~ Concentração + I(Concentração^2)); reg_lin
+summary(reg_lin)
+anova(reg_lin)
