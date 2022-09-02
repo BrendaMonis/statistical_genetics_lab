@@ -8,13 +8,10 @@ install.packages("broom")
 library(broom)
 
 ## Declarando as variáveis
-
 # Declaração da variável independente
 Concentração <-c(0.38, 0.76, 1.13, 1.51, 1.89, 3.78, 3.89, 5.84, 7.79, 9.73, 14.60, 19.46) 
-
 # Declaração da variável resposta
 Altura <-c(701.3, 1353.0, 2095.5, 2815.5, 3467.5, 6526.0, 8646.0, 12796.5, 17027.5, 21429.0, 31602.0, 42157.0)
-
 # Unindo a variável independente e a variável resposta em data frame
 data_var <- data.frame(cbind(Concentração, Altura)) 
 attach(data_var)
